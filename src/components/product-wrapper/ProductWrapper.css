@@ -1,0 +1,139 @@
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    background-color: #ddd;
+    width: 100%;
+    padding: 40px;
+    padding-top: 20px;
+}
+.card{
+    width: 236px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.yurak{
+    color: red;
+}
+.card__image{
+    /* height: 300px; */
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+.card__image img{
+    width: 80%;
+    /* height: 80%; */
+    object-fit: cover;
+    transition: .3s;
+}
+/* .card:hover .card__image img{
+    transform: scale(1.05);
+} */
+.cart__heart{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    padding: 6px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #555;
+    cursor: pointer;
+}
+.card__body{
+    padding: 10px 6px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.card__title{
+    font-size: 14px;
+}
+.card__rating{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 0;
+}
+.card__rating svg{
+    color: dodgerblue;
+}
+.card__rating span{
+    font-size: 13px;
+    color: #999;
+}
+.card__monthly{
+    flex-grow: 1;
+}
+.card__monthly span{
+    display: inline-block;
+    background-color: var(--bg-gold);
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #555;
+}
+.card__price{
+    margin-top: 20px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__price div{
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+.card__price del{
+    color: #999;
+    font-size: 14px;
+    color: #AF5679;
+}
+.price_cart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #555;
+    cursor: pointer;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+}
+.bir__clickda__sotibol{
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 35px;
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card{
+        width: auto;
+    }
+    /* .card__image{
+        height: 250px;
+    } */
+}

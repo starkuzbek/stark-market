@@ -1,0 +1,150 @@
+.login{
+    padding: 0 500px;
+}
+.login__wrapper{
+    /* text-align: center; */
+    height: 600px;
+}
+.login__collection{
+    width: 350px;
+}
+.login__wrapper{
+    border-radius: 5px;
+    width: 400px;
+    padding: 10px 30px;
+    box-shadow: 0 3px 5px 3px #ddd;
+}
+
+.google-login{
+    margin-top: 15px;
+}
+.apple-login{
+    margin-top: 15px;
+}
+.login-other-txt{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+.login-other-txt h1{
+    font-size: 13px;
+    display: flex;
+    color: #002F34;
+    margin-left: 7px;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-other-txt h1 hr{
+    width: 130px;
+    color: black;
+    height: 2px;
+}
+.kirish-register{
+    display: flex;
+    margin-top: 20px;
+    padding-left: 6px;
+    text-align: center;
+}
+.kirish-register .part1{
+    cursor: pointer;
+}
+.kirish-register h1{
+    font-size: 17px;
+}
+.kirish-register .part1 h2{
+    margin-top: -17px;
+}
+.kirish-register .part1{
+    width: 166px;
+}
+.kirish-register .part2{
+    width: 166px;
+    cursor: pointer;
+}
+.kirish-register .part2 h1{
+    font-weight: 400;
+    color: #406367;
+}
+.kirish-register .part2 hr{
+    margin-top: 8px;
+}
+
+.login-inputs{
+    margin-top: 20px;
+}
+.login-inputs .part1{
+    align-items: start;
+    justify-content: left;
+}
+.login-inputs .part1 h2{
+    font-weight: 400;
+    font-size: 17px;
+}
+.login-inputs .part1 input{
+    height: 45px;
+    padding: 1%;
+    margin-top: 5px;
+    width: 95%;
+    font-size: 20px;
+    background-color: #F2F4F6;
+    border: none;
+    border-radius: 5px;
+}
+.login-inputs .part1 input:focus{
+    outline: none;
+    border-bottom: 3px solid;
+}
+.forget-pass h2{
+    font-size: 15px;
+    cursor: pointer;
+}
+.forget-pass h2:hover{
+    color: #7b7878dd;
+}
+
+.login-btn{
+    margin-top: 20px;
+}
+.login-btn button{
+    height: 45px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+}
+
+
+@media screen and (max-width: 1075px){
+    .login{
+        padding-bottom: 60px;
+        margin-top: 50px;
+        padding-left: 360px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .login{
+        padding-left: 250px;
+    }
+}
+
+@media screen and (max-width: 750px){
+  .login{
+    padding: 0 200px;
+  }
+}
+@media screen and (max-width: 650px){
+    .login{
+        padding: 0 100px;
+    }
+}
+@media screen and (max-width: 500px){
+    .login{
+        padding: 40px;
+    }
+}

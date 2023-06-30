@@ -1,0 +1,25 @@
+.wishlist{
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 8%;
+    margin-bottom: 80px;
+}
+.wishlist img{
+    width: 90px;
+    height: 90px;
+}
+.wishlist h2{
+    font-size: 1.375rem;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin-top: 24px;
+}
+.wishlist p{
+    font-size: .8rem;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-top: 16px;
+}

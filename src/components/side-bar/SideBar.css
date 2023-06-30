@@ -1,0 +1,75 @@
+.sidebar__shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #0006;
+    z-index: 12;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: -320px;
+    width: 320px;
+    height: 100vh;
+    background: #fff;
+    z-index: 13;
+    padding-top: 20px;
+    overflow: auto;
+
+    transition: .3s ease
+}
+.sidebar.show{
+    left: 0;
+}
+.sidebar__icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    gap: 5px;
+    padding: 2%;
+    transition: .3s;
+    justify-content: space-between;
+}
+.sidebar__kategoriya{
+    line-height: 1.5rem;
+    line-height: 45px;
+    padding-left: 40px;
+}
+.sidebar__icons img{
+    width: 30px;
+    height: 40px;
+    padding-top: 5px;
+}
+.sidebar__icons h2{
+    margin-left: 20px;
+    font-size: 15px;
+}
+.sidebar__icons:hover{
+    background-color: #ddd;
+    border-radius: 4px;
+    color: dodgerblue;
+}
+.sidebar_first{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px){
+    .sidebar{
+        width: 70%;
+        left: -70%;
+    }
+}

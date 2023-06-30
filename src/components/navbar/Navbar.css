@@ -1,0 +1,244 @@
+.navbar-top{
+    width: 100%;
+    height: 60px;
+    background: #008DFF;
+}
+.navbar-top-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+}
+.navbar-top-wrapper div{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.navbar-top-wrapper .orqa{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+.navbar-top-wrapper h2{
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+}
+.navbar-top-wrapper div button{
+    height: 35px;
+    border-radius: 6px;
+    border: none;
+    background: #fff;
+    padding: 0 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.navbar-top-second h1{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.navbar-top-second .n-t-s-btn{
+    background-color: #008DFF;
+    border: 2px solid white;
+    color: white;
+    transition: .5s;
+}
+.navbar-top-second .n-t-s-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+.navbar-top-til{
+    height: 100%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    color: rgb(200, 198, 198);
+    padding: 0 10px;
+}
+.navbar-top-til p{
+    color: #cdcbcb;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.navbar-top-til .navbar-top-til-uzb{
+    color: #fff;
+}
+
+
+/* Navbar Main  START*/
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+.navbar-main{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: sticky;
+    z-index: 99;
+}
+.logo{
+    color: #008DFF;
+    font-size: 20px;
+}
+.nav-btn{
+    background: #008DFF;
+    color: white;
+    padding: 0 26px;
+    height: 44px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    display: flex;
+    gap: 8px;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+}
+.navbar-katalog{
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-katalog .navbar-search{
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.navbar-katalog .navbar-search input{
+    flex: 1;
+    width: 360px;
+    border: none;
+    outline: none;
+    text-indent: 16px;
+    height: 44px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+.navbar-search button{
+    width: 60px;
+    border: none;
+    outline: none;
+    background-color: #008DFF;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-collection{
+    display: flex;
+    align-items: flex-start;
+    /* gap: 30px; */
+}
+.nav-item{
+    text-align: center;
+    gap: 8px;
+    width: auto;
+}
+.nav-item a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+.nav-item span{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+.nav-item svg{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width:1075px){
+    .nav-collection{
+        z-index: 11;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        box-shadow: 0 -3px 5px #0001;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width:990px) {
+    .navbar-top{
+        display: none;
+    }
+    .navbar-top-wrapper{
+        justify-content: center;
+    }
+    .nav-collection{
+        z-index: 11;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: #fff;
+        box-shadow: 0 -3px 5px #0001;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .nav-item{
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+    }
+    .nav-item span{
+        font-size: 12px;
+    }
+    .nav-item:first-child{
+        display: flex;
+    }
+    .navbar-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-search input{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:610px){
+    .navbar-katalog .navbar-search input{
+        width: 300px;
+    }
+    .navbar-katalog .nav-btn span{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    .navbar-katalog .navbar-search input{
+        width: 250px;
+    }
+    .navbar-katalog .nav-btn{
+        width: auto;
+    }
+}
+
+@media screen and (max-width:400px){
+    .navbar-katalog .navbar-search input{
+        width: 250px;
+    }
+    .navbar-katalog .navbar-search button{
+        display: none;
+    }
+}

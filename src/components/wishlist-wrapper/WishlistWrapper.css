@@ -1,0 +1,241 @@
+.wish__wrapper{
+    padding: 30px 0 80px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 16px;
+    align-items: start;
+    background-color: #F4F7FD;
+    padding: 0 100px;
+}
+.asos{
+    display: flex;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 16px;
+}
+.wish__wrapper-content{
+    border-radius: 6px;
+    padding: 16px;
+}
+.wish__wrapper-item{
+    padding: 0 20px;
+    height: 210px;
+    margin-top: 20px;
+    box-shadow: 0 1px 5px 2px #ddd;
+    display: flex;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: space-between;
+}
+.barer{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 7px;
+    padding: 5px 5px;
+    color: white;
+}
+.wish__name{
+    width: 400px;
+    /* border: 1px solid; */
+}
+.wish__name h3{
+    font-weight: 300;
+    font-size: 20px;
+}
+.wish__name h2{
+    font-weight: 300;
+    font-size: 18px;
+    color: #575454;
+}
+.wish__name h2 font{
+    color: black;
+    font-weight: 400;
+}
+.wish__ochirish button{
+    border: none;
+    border-radius: 10px;
+    background-color: dodgerblue;
+    font-size: 15px;
+    /* padding: 10px 50px; */
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    gap: 5px;
+}
+.wish__ochirish .ochirish{
+    border: none;
+    border-radius: 10px;
+    background-color: #FE7300;
+    font-size: 15px;
+    /* padding: 10px 50px; */
+    color: #fff;
+    cursor: pointer;
+    gap: 5px;
+}
+.wish__narx{
+    width: 100%;
+}
+.card_monthly{
+    width: 100%;
+    display: flex;
+}
+.wish__narx h2{
+    display: flex;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+}
+.wish-narx-ochirish{
+    padding: 0 50px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.wish__rasm{
+    box-shadow: 0 2px 5px 3px #ddd;
+    padding: 20px 20px;
+    border-radius: 7px;
+}
+
+
+.wish-rasm-name-qoshish{
+    align-items: center;
+    display: flex;
+}
+.wish-rasm-name-qoshish .wish-rasm-name{
+    display: flex;
+    gap: 50px;
+}
+
+
+@media screen and (max-width:1075px){
+    .wish__wrapper{
+        padding: 0;
+    }
+    .wish__wrapper-item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:990px){
+    .wish__wrapper{
+        grid-template-columns: 1fr;
+        padding-left: -50px;
+    }
+    .wish__wrapper-content{
+        order: 2;
+        line-height: 50px;
+    }
+    .wish__wrapper-form{
+        order: 1;
+    }
+    .wish__narx h2{
+        display: flex;
+    }
+    .wish__wrapper-item{
+        gap: 30px;
+    }
+    .wish__wrapper-form form input {
+    width: 80%;
+    }
+    .wish__wrapper-form form button {
+    width: 20%;
+    }
+    .wish__wrapper-form{
+        width: 90%;
+    }
+    .asos{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .wish__wrapper-item{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        height: auto;
+        padding: 30px;
+    }
+    .wish__ochirish{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .wish__ochirish .ochirish{
+        width: 100px;
+    }
+    .wish__narx{
+        justify-items: center;
+        height: 100%;
+    }
+   
+    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .wish__wrapper {
+    grid-template-columns: 1fr;
+    background-color: #fff;
+    }
+    .wish-rasm-name{
+    display: flex;
+    }
+    .wish-rasm-name-qoshish{
+     display: flex;
+     flex-direction: column;
+    }
+    .wish__narx-qoshish{
+     margin-left: -70%;
+     margin-top: 30px;
+    }
+    .wish__name {
+    width: 100%;
+    }
+    .wish-rasm-name-qoshish .wish-rasm-name {
+    gap: 10px;
+    }
+    .wish__rasm{
+        box-shadow: none;
+    }
+    .wish__name h3{
+        line-height: 20px;
+        width: 100%;
+    }
+    .wish__wrapper-item{
+        height: auto;
+    }
+    }
+
+    @media screen and (max-width: 450px){
+    .wish__name h3{
+        font-size: 15px;
+    }
+    .wish__name h2{
+        font-size: 15px;
+    }
+    .wish__narx h2{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .asos{
+        width: 50%;
+    }
+    }
+
+    @media screen and (max-width: 375px){
+        .asos{
+            display: flex;
+            grid-template-columns: 2.5fr 1fr;
+            display: grid;
+            flex-direction: column;
+        }
+    }
+
+    

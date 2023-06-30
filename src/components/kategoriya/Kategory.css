@@ -1,0 +1,25 @@
+.kategoriya{
+    display: flex;
+    /* gap: 20px; */
+    flex-wrap: wrap;
+}
+.kategoriya .kategoriya__collection h1{
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    flex-wrap: wrap;
+    font-weight: 900;
+    width: 100%;
+}
+.kategoriya .kategoriya__collection{
+    text-align: center;
+    flex-wrap: wrap;
+    width: 150px;
+    cursor: pointer;
+}
+.kategoriya .kategoriya__collection img{
+    transition: .2s;
+}
+.kategoriya .kategoriya__collection img:hover{
+        transform: scale(1.05);
+}

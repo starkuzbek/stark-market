@@ -1,0 +1,267 @@
+.cart__wrapper{
+    padding: 30px 0 80px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 16px;
+    align-items: start;
+}
+.asos{
+    display: flex;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-gap: 16px;
+    /* align-items: start; */
+}
+.cart__wrapper-item{
+    padding: 30px;
+    border-bottom: 1px solid #b7b2b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart__name{
+    width: 350px;
+    /* border: 1px solid; */
+}
+.cart__name h3{
+    font-weight: 300;
+    font-size: 20px;
+}
+.cart__name h2{
+    font-weight: 300;
+    font-size: 18px;
+    color: #575454;
+}
+.cart__name h2 font{
+    color: black;
+    font-weight: 400;
+}
+.cart__narx-qoshish{
+    height: 50px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    border: 1px solid #ddd;
+    text-align: center;
+    text-indent: 0;
+    border-radius: 4px;
+}
+.cart__narx-qoshish button{
+    font-size: 25px;
+    width: 40px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    color: #464545;
+    cursor: pointer;
+}
+.cart_soni{
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+    width: 40px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: 300;
+}
+.cart__wrapper-content{
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+}
+.cart__wrapper-form{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 16px;
+}
+.cart__wrapper-form h3{
+    color: #483285;
+}
+.cart__wrapper-form form h1{
+    font-size: 20px;
+}
+.cart__wrapper-form form .cart_in{
+    margin-top: 15px;
+}
+.cart__wrapper-form form input{
+    height: 35px;
+    width: 100%;
+    padding: 2%;
+    border-radius: 4px;
+    border: 1px solid;
+    font-size: 20px;
+}
+.cart__wrapper-form form button{
+    margin-top: 15px;
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cart__ochirish button{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #5c5a5a;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+.cart_soni h1{
+    font-family: default;
+}
+.cart__ochirish button h1{
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+}
+.cart__narx h2{
+    font-weight: 400;
+}
+.cart-narx-ochirish{
+    line-height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.cart-rasm-name-qoshish{
+    align-items: center;
+    display: flex;
+}
+.cart-rasm-name-qoshish .cart-rasm-name{
+    display: flex;
+    gap: 50px;
+}
+.buyurtma-other{
+    line-height: 35px;
+}
+.buyurtma-other .buyurtma-haqida{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buyurtma-other .buyurtma-haqida h2{
+    font-size: 20px;
+    color: #111;
+}
+
+
+@media screen and (max-width:990px){
+    .cart__wrapper{
+        grid-template-columns: 1fr;
+    }
+    .cart__wrapper-content{
+        order: 1;
+    }
+    .cart__wrapper-form{
+        order: 2;
+    }
+    .cart__narx h2{
+        display: flex;
+    }
+    .cart__wrapper-item{
+        gap: 30px;
+    }
+    .cart__wrapper-form form input {
+    width: 80%;
+    }
+    .cart__wrapper-form form button {
+    width: 20%;
+    }
+    .cart__wrapper-form{
+        width: 90%;
+    }
+    .asos{
+        width: 90%;
+    }
+   
+    
+}
+
+/* @media screen and (max-width:700px){
+    .cart-rasm-name-qoshish{
+        display: flex;
+        flex-direction: column;
+    }
+    .cart__narx-qoshish{
+        display: flex;
+        margin-left: -80%;
+        margin-top: 30px;
+        padding-top: 5px;
+    }
+    .cart__narx h2{
+        display: flex;
+    }
+    .cart__wrapper-form{
+        width: 200px;
+    }
+} */
+
+
+@media screen and (max-width: 768px) {
+    .cart__wrapper {
+    grid-template-columns: 1fr;
+    }
+    .cart-rasm-name{
+    display: flex;
+    }
+    .cart-rasm-name-qoshish{
+     display: flex;
+     flex-direction: column;
+    }
+    .cart__narx-qoshish{
+     margin-left: -70%;
+     margin-top: 30px;
+    }
+    .cart__name {
+    width: 100%;
+    }
+    .cart__wrapper-form form input {
+    width: 80%;
+    }
+    .cart__wrapper-form form button {
+    width: 60%;
+    }
+    .cart-rasm-name-qoshish .cart-rasm-name {
+    gap: 10px;
+    }
+    }
+
+    @media screen and (max-width: 450px){
+    .cart__name h3{
+        font-size: 15px;
+    }
+    .cart__name h2{
+        font-size: 15px;
+    }
+    .cart__narx h2{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .asos{
+        width: 50%;
+    }
+    }
+
+    @media screen and (max-width: 375px){
+        .asos{
+            display: flex;
+            grid-template-columns: 2.5fr 1fr;
+            display: grid;
+            flex-direction: column;
+        }
+    }
+
+    
